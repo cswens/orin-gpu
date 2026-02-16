@@ -24,6 +24,8 @@ Check here but they stopped updating after 6.1
 https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html
 
 
+Need to figure out how to install nvidia-cudnn and cusparselt
+
 sudo apt install python3-pip
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126 --break-system-packages
 

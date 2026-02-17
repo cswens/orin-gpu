@@ -4,7 +4,7 @@ FROM orin-cuda:latest
 
 # Install cuSPARSELt
 COPY install-cusparselt.sh /usr/bin/install-cusparselt.sh
-# RUN chmod +x /usr/bin/install-cusparselt.sh
+RUN chmod +x /usr/bin/install-cusparselt.sh && /usr/bin/install-cusparselt.sh
 
 # Install PyTorch
 

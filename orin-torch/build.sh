@@ -11,6 +11,6 @@ IMAGE_TAG="latest"
 
 echo "Building Docker image: ${IMAGE_NAME}:${IMAGE_TAG}"
 echo "Script directory: ${SCRIPT_DIR}"
-docker build --progress=plain --no-cache -t "${IMAGE_NAME}:${IMAGE_TAG}" -f "${SCRIPT_DIR}/${DOCKERFILE}" "${SCRIPT_DIR}"
+docker build --no-cache -t "${IMAGE_NAME}:${IMAGE_TAG}" -f "${SCRIPT_DIR}/${DOCKERFILE}" "${SCRIPT_DIR}"
 
 echo "Build complete!"

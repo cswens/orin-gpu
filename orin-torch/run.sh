@@ -2,7 +2,7 @@
 
 set -e
 
-IMAGE_NAME="orin-cuda"
+IMAGE_NAME="orin-torch"
 IMAGE_TAG="latest"
 
 docker run --rm -it --privileged \

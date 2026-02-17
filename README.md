@@ -40,3 +40,12 @@ Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cud
 CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
 For debugging consider passing CUDA_LAUNCH_BLOCKING=1
 Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+### cusparcelt
+https://developer.nvidia.com/cusparselt-downloads?target_os=Linux&target_arch=aarch64-jetson&Compilation=Native&Distribution=Agnostic&cuda_version=12
+wget https://developer.download.nvidia.com/compute/cusparselt/redist/libcusparse_lt/linux-aarch64/libcusparse_lt-linux-aarch64-0.8.1.1_cuda12-archive.tar.xz
+
+
+https://docs.nvidia.com/cuda/cusparselt/getting_started.html#linux
+
+

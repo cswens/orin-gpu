@@ -59,4 +59,9 @@ https://repo.download.nvidia.com/jetson#Jetpack%206.1/6.2/6.2.1
 
 
 ### Plan B
+Use NVIDIA PyTorch but add missing L4T binaries to replace NVIDIA Container Toolkit
 https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch/tags?version=26.01-py3-igpu
+
+"/opt/nvidia/nvidia_entrypoint.sh"
+
+Might just have to throw an init script in opt/nvidia/entrypoint.d/

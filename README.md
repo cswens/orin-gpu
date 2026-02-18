@@ -49,3 +49,14 @@ wget https://developer.download.nvidia.com/compute/cusparselt/redist/libcusparse
 https://docs.nvidia.com/cuda/cusparselt/getting_started.html#linux
 
 
+
+### cudnn
+https://forums.developer.nvidia.com/t/jetson-docker-cudnn-is-unavailable/341168/5
+
+https://repo.download.nvidia.com/jetson#Jetpack%206.1/6.2/6.2.1
+
+
+
+
+### Plan B
+https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch/tags?version=26.01-py3-igpu

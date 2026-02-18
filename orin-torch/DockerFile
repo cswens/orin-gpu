@@ -5,8 +5,12 @@ COPY install-cusparselt.sh /usr/bin/install-cusparselt.sh
 RUN chmod +x /usr/bin/install-cusparselt.sh && /usr/bin/install-cusparselt.sh
 
 # Install cuDNN
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    cudnn9-cuda-12-6 \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install PyTorch
+# installing pytorch from pytorch still has issues with orin, will need to install NVIDIA binaries or build from source?
 
 
 

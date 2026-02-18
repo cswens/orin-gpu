@@ -1,0 +1,8 @@
+FROM nvcr.io/nvidia/pytorch:26.01-py3-igpu
+
+RUN pip install --no-cache-dir transformers==5.2.0
+
+COPY transformers-test.py /opt/transformers-test.py
+
+
+

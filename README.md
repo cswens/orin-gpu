@@ -60,8 +60,15 @@ https://repo.download.nvidia.com/jetson#Jetpack%206.1/6.2/6.2.1
 
 ### Plan B
 Use NVIDIA PyTorch but add missing L4T binaries to replace NVIDIA Container Toolkit
-https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch/tags?version=26.01-py3-igpu
+https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch/tags?version=26.01-py3-igpudock
 
 "/opt/nvidia/nvidia_entrypoint.sh"
 
 Might just have to throw an init script in opt/nvidia/entrypoint.d/
+
+
+https://github.com/wagoodman/dive
+echo "alias dive=\"docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock docker.io/wagoodman/dive\"" >> ~/.bash_aliases
+
+
+docker history --no-trunc orin-nvtorch:latest
